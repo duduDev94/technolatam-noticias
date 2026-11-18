@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B1020">
+    <meta name="description" content="TECHNOLATAM: noticias, análisis y tendencias de tecnología para Latinoamérica.">
+    <meta name="robots" content="index, follow">
+    <title>TECHNOLATAM | Tecnología que transforma</title>
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>INFORMACIÓN Y TECNOLOGÍA PARA LATINOAMÉRICA</span>
+            <span id="current-date"></span>
+        </div>
+    </div>
+    <div class="container header-main">
+        <a class="brand" href="./" aria-label="TECHNOLATAM inicio">
+            <span class="brand-mark">T</span>
+            <span>TECHNO<span class="brand-accent">LATAM</span></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="main-nav" id="main-nav">
+            <a href="./" class="active">Inicio</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#categorias">Categorías</a>
+            <a href="./sobre-nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="live-dot"></span> EL MUNDO DIGITAL EN CONTEXTO</span>
+                <h1>La tecnología<br>está cambiando<br><span>nuestro futuro.</span></h1>
+                <p>Noticias, análisis y tendencias sobre innovación, inteligencia artificial y transformación digital en Latinoamérica.</p>
+                <a href="#noticias" class="button button-primary">Explorar noticias <span>→</span></a>
+            </div>
+            <div class="hero-art" aria-label="Ilustración tecnológica">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit-core">TL<span>+</span></div>
+                <span class="orbit-tag tag-one">AI / IA</span>
+                <span class="orbit-tag tag-two">INNOVACIÓN</span>
+                <span class="orbit-tag tag-three">LATAM</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="ticker">
+        <div class="container ticker-inner">
+            <strong>TECHNO BRIEF</strong>
+            <span>Información para entender el presente y anticipar el futuro.</span>
+        </div>
+    </section>
+
+    <section class="section container" id="noticias">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">ACTUALIDAD TECNOLÓGICA</span>
+                <h2>Últimas publicaciones</h2>
+                <p>Información y conocimiento para una región en transformación.</p>
+            </div>
+            <span class="section-counter" id="article-count">0 ARTÍCULOS</span>
+        </div>
+
+        <div class="toolbar">
+            <div class="filters" id="category-filters">
+                <button class="filter active" data-category="Todas">Todas</button>
+                <button class="filter" data-category="Inteligencia artificial">Inteligencia artificial</button>
+                <button class="filter" data-category="Software">Software</button>
+                <button class="filter" data-category="Ciberseguridad">Ciberseguridad</button>
+                <button class="filter" data-category="Innovación">Innovación</button>
+            </div>
+            <label class="search-box">
+                <span>⌕</span>
+                <input id="search-input" type="search" placeholder="Buscar noticias..." aria-label="Buscar noticias">
+            </label>
+        </div>
+
+        <div class="news-grid" id="news-grid">
+            <div class="loading-state">Cargando publicaciones...</div>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos publicaciones con esos criterios.</p>
+    </section>
+
+    <section class="categories-section" id="categorias">
+        <div class="container section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPLORA POR TEMÁTICA</span>
+                    <h2>Universos tecnológicos</h2>
+                    <p>Los temas que están definiendo el futuro.</p>
+                </div>
+            </div>
+            <div class="category-grid">
+                <a href="#noticias" data-pick-category="Inteligencia artificial" class="category-card"><span>✳</span><strong>Inteligencia artificial</strong><small>IA y aprendizaje automático</small></a>
+                <a href="#noticias" data-pick-category="Software" class="category-card"><span>⌘</span><strong>Software</strong><small>Aplicaciones y plataformas</small></a>
+                <a href="#noticias" data-pick-category="Ciberseguridad" class="category-card"><span>◈</span><strong>Ciberseguridad</strong><small>Privacidad y protección digital</small></a>
+                <a href="#noticias" data-pick-category="Innovación" class="category-card"><span>⌁</span><strong>Innovación</strong><small>Ciencia y nuevas tecnologías</small></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container newsletter">
+            <div>
+                <span class="eyebrow">TECHNOLATAM</span>
+                <h2>Comprender la tecnología<br>también es avanzar.</h2>
+                <p>Un medio para descubrir, aprender y analizar el impacto de la innovación.</p>
+            </div>
+            <a class="button button-light" href="./sobre-nosotros.html">Conoce nuestro proyecto →</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-main">
+        <div>
+            <a class="brand footer-brand" href="./"><span class="brand-mark">T</span><span>TECHNO<span class="brand-accent">LATAM</span></span></a>
+            <p>Noticias y análisis tecnológico para Latinoamérica.</p>
+        </div>
+        <div class="footer-links">
+            <a href="./sobre-nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./privacidad.html">Privacidad</a>
+            <a href="./aviso-editorial.html">Aviso editorial</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© <span id="year"></span> TECHNOLATAM. Todos los derechos reservados.</span>
+        <span>Información para comprender el futuro.</span>
+    </div>
+</footer>
+</body>
+</html>
